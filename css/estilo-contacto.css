@@ -6,9 +6,10 @@
 }
 
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
     margin: 0 ;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*Header*/
@@ -43,7 +44,7 @@ header img{
 .elementos{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 input[type="search"]{
@@ -58,7 +59,6 @@ input[type="search"]:focus{
     background-color: #F6EDDF;
     color: #CF0100;
 }
-
 nav{
     width: 1366px;
     height: 60px;
@@ -230,7 +230,7 @@ body{
     align-items: center;
 }
 
-.icono i{
+.bi-envelope-fill, .bi-geo-alt-fill{
     font-size: 1.9rem;
     color: #CF0100;
 }
@@ -317,7 +317,7 @@ body{
     color: #255a9c;
 }
 
-form{
+.fo{
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -449,7 +449,7 @@ form{
     left: 80px;
     z-index: 1;
 }
-.bi{
+.bi-facebook, .bi-twitter-x, .bi-instagram, .bi-tiktok{
     font-size: 30px;
     color: #CF0100;
     margin: 10px;
