@@ -1,0 +1,369 @@
+/*Tipografia*/
+@font-face {
+  font-family: 'Gatsby FLF Bold';
+  src: url('https://static.wfonts.com/data/2015/04/14/gatsbyflf/Gatsby FLF Bold.woff') format('woff');
+  font-display: swap;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header{
+    width: 1366px;
+    height: 160px;
+    margin: 0 auto;
+    background-color: #B1DDEC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+header img{
+    margin-top: 40px;
+    padding-left: 20px;
+    width: 15%;
+}
+
+.bi-search{
+   font-size: 25px;
+   color: #CF0100;
+}
+
+.bi-cart2{
+   margin-left: 55px;
+   font-size: 35px;
+   color: #CF0100;
+}
+
+.elementos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="search"]{
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F6EDDF;
+}
+input[type="search"]:focus{
+    outline: none;
+    background-color: #F6EDDF;
+    color: #CF0100;
+}
+
+nav{
+    width: 1366px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #DAEFF5;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+
+}
+nav a{
+    font-size: 25px;
+    font-family: 'Gatsby FLF Bold';
+    text-decoration: none;
+    color: #255a9c;
+    padding: 5px 20px;
+
+}
+nav a:first-child{
+    text-decoration: none;
+    color: #CF0100;
+}
+
+nav a:hover{
+    padding: 5px 20px;
+    background-color: #F0F7FF;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+h2{
+    color: #255a9c;
+    margin: 40px;
+    font-size: 60px;
+    font-family: 'Gatsby FLF Bold';
+}
+p{
+    color:#255a9c ;
+}
+.menuimg img{
+    padding: 10px;
+}
+.menuimg{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+
+}
+
+.bebidas{
+    width: 1366px;
+    height: 1800px;
+    background-color: #B1DDEC;
+
+}
+.tarjetas{
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.tarjeta{
+    width: 300px;            
+    height: 339px;
+    border-radius: 20px;
+    display: inline-block;             
+    position: relative;       
+    /*background-color: #ffe7bb;*/   
+    margin: 40px 25px;
+}
+.tarjeta div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    backface-visibility: hidden;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 1px 10px 20px rgb(40, 165, 242);
+    
+}
+
+.tarjeta .adelante{
+    transform: perspective(500px) rotateY(0deg);
+    
+}
+
+
+.tarjeta .atras{
+    background-color: #ffeac4;
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 20px;
+    padding: 50px;
+    background-image: url(../imgs/atras.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+.tarjeta:hover .adelante{
+    transform: perspective(500px) rotateY(180deg);
+}
+.tarjeta:hover .atras{
+    transform: perspective(500px) rotateY(360deg);
+}
+.tarjetas h3{
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #CF0100;
+
+}
+
+.tarjeta .adelante img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.anuncio{
+    width: 1366px;
+    height: 500px;
+}
+.comida{
+    width: 1366px;
+    height: auto;
+    background-color: #f7e9cf;
+
+}
+
+.chapas{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+ 
+.chapa{
+    width: 280px;            
+    height: 280px;
+    border-radius: 100%;
+    display: inline-block;             
+    position: relative;       
+    /*background-color: #ffe7bb; */  
+    margin: 50px;      
+}
+.chapa div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    backface-visibility: hidden;
+    transition: 1s;
+    
+}
+
+.chapa .adelante{
+    transform: perspective(500px) rotateY(0deg);
+    
+}
+
+.chapa .atras{
+    /*background-color: #ffe7bb;*/
+    transform: perspective(500px) rotateY(180deg);
+    border-radius: 100%;
+    background-image: url(../imgs/chapa.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;  
+    padding: 60px 45px;
+
+}
+.chapa:hover .adelante{
+    transform: perspective(500px) rotateY(180deg);
+}
+.chapa:hover .atras{
+    transform: perspective(500px) rotateY(360deg);
+}
+.chapa h3{
+    text-align: center;
+    color: #CF0100;
+    font-size: 28px;
+
+}
+
+.chapa .adelante img{
+    width: 100%;
+    border-radius: 100%;
+}
+.chapa p{
+    margin: 10px;
+}
+
+/*redes sociales*/
+.redes{
+    width: 50px;
+    height: 150px;
+    background-color:#f7e9cfac ;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 80px;
+    z-index: 1;
+}
+.bi{
+    font-size: 30px;
+    color: #CF0100;
+    margin: 10px;
+}
+
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: #B1DDEC;
+    width: 1366px;
+    height: 250px;
+    margin: 0 auto;
+    border-top-right-radius: 90px;
+    color: #255a9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 280px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.lineas{
+    pointer-events: none;
+    width: 1366px;
+    position: absolute;
+    padding-right: 10px;
+    padding-bottom: 8px;
+
+}
+
+.copy{
+    padding-top: 20px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.info p{
+    position: relative;
+    top: 25px;
+    
+}
+
+.links{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #255a9c;
+    display: block;
+    margin-bottom: 5px;
+    
+
+}
+
+footer img{
+    width: 13%;
+    position: relative;
+    z-index: 2;
+    margin-left: 10px;
+}
+.main-footer{
+    background-color: #f7e9cf;
+    width: 1366px;
+    margin: 0 auto;   
+}
+main{
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.inf{
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    margin-right: 18px;
+    padding-bottom: 18px;
+    font-size: 13px;
+
+}
