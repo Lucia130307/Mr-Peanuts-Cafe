@@ -6,10 +6,9 @@
 }
 
 *{
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
     margin: 0 ;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Header*/
@@ -41,13 +40,18 @@ header img{
    color: #CF0100;
 }
 
+.busqueda{
+    display: inline;
+}
+
 .elementos{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 input[type="search"]{
+    width: 189px;
     height: 30px;
     padding: 10px;
     border-radius: 5px;
@@ -59,6 +63,7 @@ input[type="search"]:focus{
     background-color: #F6EDDF;
     color: #CF0100;
 }
+
 nav{
     width: 1366px;
     height: 60px;
@@ -70,7 +75,7 @@ nav{
     align-items: center;
     position:sticky;
     top: 0;
-    z-index: 100;
+    z-index: 9999;
 
 }
 nav a{
@@ -81,7 +86,7 @@ nav a{
     padding: 5px 20px;
 
 }
-nav a:first-child{
+.active{
     text-decoration: none;
     color: #CF0100;
 }
@@ -230,7 +235,7 @@ body{
     align-items: center;
 }
 
-.bi-envelope-fill, .bi-geo-alt-fill{
+.icono i{
     font-size: 1.9rem;
     color: #CF0100;
 }
@@ -317,7 +322,7 @@ body{
     color: #255a9c;
 }
 
-.fo{
+form{
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -448,6 +453,11 @@ body{
     top: 50%;
     left: 80px;
     z-index: 1;
+}
+.bi-search, .bi-cart2{
+    font-size: 30px;
+    color: #CF0100;
+    margin: 10px;
 }
 .bi-facebook, .bi-twitter-x, .bi-instagram, .bi-tiktok{
     font-size: 30px;
