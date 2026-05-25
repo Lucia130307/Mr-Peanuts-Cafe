@@ -235,7 +235,7 @@ body{
     align-items: center;
 }
 
-.icono i{
+.bi-envelope-fill, .bi-geo-alt-fill{
     font-size: 1.9rem;
     color: #CF0100;
 }
